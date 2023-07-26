@@ -2,3 +2,49 @@
   padding: 0;
   margin:0;
 }
+button{
+  background-color: rgb(41, 238, 84);
+  height: 35px;
+  width: 175px;
+  display: block;
+  border-radius: 25px;
+  border: 1px solid black; 
+  font-family: 'Courier New', Courier, monospace;
+}
+.app-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.register--container{
+  border-radius: 25px;
+  background-color: rgba(120, 156, 198, 0.849);
+  padding: 40px 30px;
+  border: 3px solid black;  
+}
+.register--name{
+  display: block;
+  padding: 0px 35px;
+}
+.register--preco{
+  display: block;
+  padding: 0px 35px;
+}
+.register--cat{
+  display: block;
+  padding: 0px 35px;
+}
+h1{
+  display: flex;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+input{
+  height: 35px;
+  
+}
+.header-inicial{
+  background-color: blueviolet;
+  padding: 25px;
+  display: flex;
+}

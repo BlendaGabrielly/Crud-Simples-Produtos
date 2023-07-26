@@ -1,20 +1,19 @@
 import './App.css';
+import React, {useState} from "react";
 
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Cadastro from '../src/Cadastro/Cadastro'
+import Home from '../src/Home/Home'
 function App() {
-  return <div className="app-container">
-    <div className="register--container">
-      <h1>Loja GameFU</h1>
-      <input type="text" name="name"
-       placeholder='Nome' className="register--input"></input>
-
-      <input type="text" name="cost" placeholder='Preço'
-       className="register--input"></input> 
-
-       <input type="text" name="category" placeholder='Categoria' 
-       className="register--input"></input> 
-    </div>
-     
-    </div>
+  return(
+     <Router>
+     <Routes>
+       <Route path='/cadastro' element={<Cadastro/>}/>
+       <Route path='/' element={<Home/>}/>
+     </Routes>
+   </Router>
+   
+  );
 }
 
 export default App;
